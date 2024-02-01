@@ -48,7 +48,22 @@ nav{
 .logo .jathu{
     font-size: 30px;
     font-weight: bold;
+   
 }
+.jath{
+    margin-left: 00px;
+    margin-top: -30px;
+}
+.links{
+    margin-left: 1200px;
+    width: 100%;
+}
+@media(max-width:462px){
+   .jathu{
+    margin-top: -30px;
+   }
+}
+
 nav .logo a{
     font-size: 1.5rem;
     font-weight: 600;
@@ -66,8 +81,9 @@ nav input{
 }
 nav .checkbox i{
     font-size: 2rem;
-    color: black;
+    color: rgb(210, 25, 25);
     cursor: pointer;
+    margin-left: 140px;
 }
 ul{
     display: flex;
@@ -178,21 +194,29 @@ span{
     padding: 0.2rem 0.3rem;
     outline: none;
     border: 2px solid rgb(3, 71, 148);
-    border-radius: 10px;
+    border-radius: 20px;
     transition: 0.3s;
     cursor: pointer;
-    background-color: #2b2a2f;
-    color: #aaabb0; 
+    background-color: #ffffff;
+    color: #000000;
+    width: 150px; 
     
 
 }
 .hireme:hover{
-    background-color: rgb(44, 60, 88);
-    color: blueviolet;
+    background-color: rgb(2, 90, 232);
+    color: rgb(255, 255, 255);
 }
 .image{
     display: grid;
     place-items: center;
+}
+@media(min-width:602px){
+    .image{
+        /* background-color: rebeccapurple; */
+        margin-left: 300px;
+    }
+    
 }
 .image img{
     width: min(30rem, 100%);
@@ -205,7 +229,7 @@ span{
         position: absolute;
         width: 100%;
         height: calc(50vh - 85px);
-        left: -100%;
+        left: -200%;
         top: 85px;
         background-color:rgb(137, 195, 195);
         flex-direction: column;
@@ -226,16 +250,18 @@ span{
     padding: 10rem 1rem 5rem 1rem 1rem;
     text-align: center;
     grid-template-columns: repeat(1, 1fr);
+
   }
+
   .image{
-    grid-area: 1/1/1/1;
+    grid-area: 1;
   }
   .button{
     /* margin-top: 30px; */
     margin-left: 139px;
   }
   .image img{
-    width: min(50rem, 100%);
+    width:20rem;
     transition: 0.7s;
 
   }
@@ -340,7 +366,7 @@ span{
 }
 .btn1 button{
     margin-left: 100px;
-    width: 200px;
+    width: 250px;
     padding: 8px 18px;
     border:1px solid black;
     border-radius: 25px;
@@ -360,7 +386,8 @@ span{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 10px 80px;
-    margin-top: -40px;
+    margin-top: 40px;
+    margin-left: 50px;
 }
 .skillsection .subject{
     font-size: 18px;
@@ -369,6 +396,7 @@ span{
     padding-bottom: 10px;
     text-transform: uppercase;
     letter-spacing: 1px;
+    margin-left: 100px;
 }
 .prograsbar{
     width: 100%;
@@ -421,36 +449,49 @@ span{
     
     }
 }
-@media(max-width : 600px){
+@media(max-width : 462px){
     .personalinfo{
         grid-template-columns: 1fr;
         margin-left: -1px;
     }
 }
-@media(max-width:600px){
+@media(max-width:462px){
     .infosection p{
-        text-align:left ;
-        margin-left: -1px;
+        /* text-align:left ; */
+        margin-left: -300px;
+        /* font-size: 30px;
+        text-align: justify; */
     }
     .infosection h1{
         display: grid;
-        grid-template-rows: 1fr  ;
+        grid-template-rows: 1fr ;
         justify-content: center;
-        margin-top: -550px;
         text-align: center;
-        margin-left: -0px;
+        margin-left: -600px;
+        margin-top: -200px;
         text-decoration: underline;
 }
+    .infosection p{
+        /* margin-top: 550px; */
+        /* margin-left: -400px; */
+        /* display: inline-block; */
+        text-align: left;
+        width: 300px;
+        margin-left: -321px;
+
+    }
     .infosection h2 {
         margin-top: 450px;
+        margin-left: -322px;
+        text-decoration: underline;
         
     }
     .imagesection img{
         border-radius: 50%;
         width: 400px;
         height: 400px;
-        margin-left: -23px;
-        margin-top: 20px;
+        margin-left: -9px;
+        margin-top: -100px;
         transition: .7s;
 
     }
@@ -461,12 +502,18 @@ span{
     }
     .skillsection{
         margin-top: -40px;
+        width: 400px;
+        margin-left: -10px;
     }
     .personalinfo{
         font-size: 15px;
+        margin-left: -350px;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        justify-content: center;
     }
     .btn1 button{
-        margin-left: 79px;
+        margin-left: -310px;
     }
     .about-container .about-content{
         /* background-color: #000; */
@@ -487,11 +534,12 @@ span{
 }
 
 .box1 img{
-    width: 500px;
-    height: 600px;
+    width: 430px;
+    height: 400px;
     border-radius: 20px;
     /* border: 2px solid; */
     transition: 0.7s;
+    margin-left: 7px;
 
 
 }
@@ -500,7 +548,7 @@ span{
 }
 .projectphotos h3{
     height: 200px;
-    width: 500px;
+    width: 400px;
     border: 2px solid;
     border-radius: 10px;
     text-align: center;
@@ -531,16 +579,38 @@ span{
     text-align: center;
     margin-bottom: 80px;
 }
+#btncard{
+    font-size: 1.5rem;
+    font-weight: 100;
+    letter-spacing: 2px;
+    padding: 0.2rem 0.3rem;
+    outline: none;
+    border: 2px solid rgb(3, 71, 148);
+    border-radius: 20px;
+    transition: 0.3s;
+    cursor: pointer;
+    background-color: #2479ad;
+    color: #ffffff;
+    width: 150px; 
+    margin-left: 170px;
+    margin-top: 20px;
+}
+#btncard:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    transition: 1.7s;
+    text-transform: uppercase;
+}
 @media(max-width: 462px){
     .main1{
         text-align: justify;
         margin-left: -1px;
         height:100vh !important;
         /* background-color: #0011ff; */
-        margin-top: 1400px;
+        margin-top: 1200px;
 
     }
-    .box1 img{
+    .box1 .card{
         width: 400px;
         height: 400px;
         margin-left: 15px;
@@ -568,7 +638,7 @@ span{
 @media(min-width:600px){
     .projectphotos{
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr ;
     }
 }
 /* contact me started */
@@ -608,6 +678,8 @@ span{
     width: 800px;
     height: 500px;
     background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+
 }
 .contact h3{
     text-align: center;
@@ -624,6 +696,7 @@ span{
     font-size: 18px;
     margin-left: 30px;
     text-align: center;
+    border-radius: 20px;
 }
 .txt{
      width: 350px;
@@ -631,6 +704,8 @@ span{
     font-size: 18px;
     margin-left: 30px;
     text-align: center;
+    border-radius: 20px;
+
 }
 .mail{
     margin-top: 30px;
@@ -639,6 +714,8 @@ span{
     margin-left: 30px;
     font-size: 18px;
     text-align: center;
+    border-radius: 20px;
+
 
 
 }
@@ -649,6 +726,8 @@ span{
     margin-left: 30px;
     font-size: 18px;
     text-align: center;
+    border-radius: 20px;
+
 }
 .contact button{
     font-size: 1.5rem;
@@ -657,7 +736,7 @@ span{
     padding: 0.2rem 0.3rem;
     outline: none;
     border: 2px solid rgb(3, 71, 148);
-    border-radius: 10px;
+    border-radius: 20px;
     transition: 0.3s;
     cursor: pointer;
     background-color: #2b2a2f;
@@ -670,9 +749,9 @@ span{
 }
 @media(max-width : 462px){
     .headingc{
-        font-size: 18px;
+        font-size: 28px;
         text-align: center;
-        margin-top: 1100px;
+        margin-top: 300px;
     }
     .para1{
         font-size: 18px;
@@ -680,6 +759,7 @@ span{
     }
     .contactme{
         margin-left: -1px;
+        height: 100vh;
     }
     .grid{
         display: grid;
@@ -736,5 +816,116 @@ span{
         display: grid;
         grid-template-columns: 1fr 1fr;
         
+    }
+}
+/* footer started */
+.footer{
+    background-color: rgb(6, 87, 103);
+    width: 100%;
+    height: 300px;
+    flex-wrap: wrap;
+    margin-top: 300px;
+    
+}
+.gridfooter{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 150px;
+    margin-top: -300px;
+}
+.aus{
+    width: 250px;
+    margin-top: -50px;
+}
+.aus h6{
+    /* margin-top: -30px; */
+    font-size: 30px;
+    padding-top: 50px;
+    color: white;
+}
+.aus p{
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 23.4px;
+}
+.icon5{
+    font-size: 3rem;
+    margin-top: 20px;
+    margin-left: -10px;
+}
+.icon5 a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+
+}
+.icon5 i{
+    transition: 0.3s ease-in;
+    /* transform: matrix(200); */
+    
+
+}
+.icon5 i:hover{
+    /* background-color: #a6deeb; */
+    color: rgb(1, 1, 22);
+    border-radius: 40px;
+}
+.tit{
+    color: antiquewhite;
+}
+.tit ul{
+    list-style: none;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 8px;
+    margin-top: 15px;
+    margin-left: 18px;
+    font-size: 25px;
+
+
+}
+.tit ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin-left: -25px;
+    transition: 0.7s;
+    font-weight: bold;
+    /* font-size: 20px; */
+    gap: 20px;
+}
+.quiclink .tit ul li a:hover{
+    transition: 0.7s;
+
+    transform: rotate(360deg);
+    color: black;
+    text-transform: uppercase;
+}
+.copy {
+    background-color: rgb(215, 218, 219);
+    width: 100%;
+    height: 51px;
+    margin-top: 5px;
+}
+.copy p{
+    text-align: center;
+    padding-top: 5px;
+    font-size: 25px;
+}
+@media(max-width : 462px){
+    .footer{
+        margin-top: 1800px;
+        display: flex;
+        flex-direction: row;
+        text-align: left;
+        height: 600px;
+    }
+    .aus{
+        margin-top: 300px;
+        margin-left: -50px;
+    }
+    .quiclink .tit{
+        margin-left: -100px;
+    }
+    .tit ul li a{
+        background-color: #6b7280;
     }
 }

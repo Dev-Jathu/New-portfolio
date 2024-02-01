@@ -5,27 +5,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"/>
     <link rel="stylesheet" href="index.Css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet" />
+    
+
 </head>
 
 <body>
     <nav>
         <div class="navbar">
             <div class="logo">
+                <div class="jath">
                 <a href="#" class="jathu">Jathusan</a>
+            </div>
                 <label for="check" class="checkbox">
                     <i class="ri-menu-line"></i>
-
                 </label>
+                <div class="links">
                 <input type="checkbox" name="check" id="check">
+                
                 <ul>
                     <li><a href="#home" class="active">Home</a></li>
-                    <li><a href="#aboutme">About Me</a></li>
+                    <li><a href="#aboutme">About</a></li>
                     <li><a href="#project">Project</a></li>
                     <li><a href="#contact">Contact</a></li>
                     <!-- <li><button class="btn">LogIn</button> </li> -->
                 </ul>
+            </div>
             </div>
         </div>
     </nav>
@@ -69,7 +80,7 @@
             </section>
             <section class="infosection">
                 <h1>About Me</h1>
-                <h2>App Design</h2>
+                <h2>Software Developper!</h2>
                 <p>
                     "Hello I,m Jathusan, at 22 years old, I'm currently studying at Uki Vavuniya
                     and pursuing a career as a software developer and web developer.
@@ -79,12 +90,12 @@
                     likely to flourish,
                     opening up exciting opportunities in the dynamic world of technology.!"
                 </p>
-                <div class="personalinfo">
-                    <div><span>Name :</span><span>Kunanathan Jathusan</span></div>
+                <!-- <div class="personalinfo">
+                    <div>Name:Kunanathan Jathusan</div>
                     <div><span>Age :</span><span> 22 years</span></div>
                     <div><span>Email :</span><span>jathusankunam005@gmail.com</span></div>
                     <div><span>Address :</span><span> Veerapuram neriyakulam </span></div>
-                </div>
+                </div> -->
                 <div class="btn1">
                     <button>Download cv</button>
                 </div>
@@ -105,9 +116,9 @@
                 </div>
 
                 <div class="skill">
-                    <div class="subject">Python</div>
+                    <div class="subject">Bootstrap</div>
                     <div class="prograsbar">
-                        <div class="prograsline" value="30%" style="max-width: 30%;"></div>
+                        <div class="prograsline" value="80%" style="max-width: 80%;"></div>
                     </div>
                 </div>
 
@@ -130,21 +141,48 @@
         </div>
         <div class="projectphotos">
             <div class="box1">
-                <img src="assets/g3.png">
-                <h3 class="trans">This is my 1st Project</h3>
+                <div class="card" style="width: 33rem;">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary" id="btncard">Show</a>
+                    </div>
+                  </div>
             </div>
 
             <div class="box1">
-                <img src="assets/g1.png">
-                <h3>This is my 2nd Project</h3>
-
+                <div class="card" style="width: 33rem;">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary" id="btncard">Show</a>
+                    </div>
+                  </div>
             </div>
 
             <div class="box1">
-                <img src="assets/g22.jpg">
-                <h3>This is my 3rd Project</h3>
-
+                <div class="card" style="width: 33rem;">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary" id="btncard">Show</a>
+                    </div>
+                  </div>
             </div>
+
+            <!-- <div class="box1">
+                <div class="card" style="width: 23rem;">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+            </div> -->
         </div>
     </div>
     <!-- contact me page started -->
@@ -173,7 +211,54 @@
         </div>
     </div>
     <!-- footer opening -->
-  
+    <div class="footer">
+        <div class="gridfooter">
+          <div class="aus">
+            <h6>About Us</h6>
+            <p>Welcome to my digital showcase! I'm Jathusan kunanathan.</p>
+            <div class="icon5">
+              <a href="https://web.facebook.com/profile.php?id=100085089802666"><i class="ri-facebook-circle-fill"></i>
+              </a>
+              <a href="https://twitter.com/Jathusank1"><i class="ri-twitter-fill"></i></a>
+              <a href="https://lk.linkedin.com/"><i class="ri-linkedin-box-fill"></i> </a>
+              <a href="https://web.whatsapp.com/"><i class="ri-whatsapp-line"></i> </a>
+            </div>
+          </div>
+          <div class="quiclink">
+            <!-- <div class="tit"> -->
+              <h2>Quiclinks</h2>
+              <ul>
+                <li><a href="#header-left">Home</a></li>
+                <li><a href="#aboutus">About Me</a></li>
+                <li><a href="#visits">Project</a></li>
+                <li><a href="#contactus">Contact</a></li>
+                <!-- <li><a href="#guide">Guide</a></li> -->
+              </ul>
+            <!-- </div> -->
+          </div>
+          <div class="aboutdetails">
+            fdhdfg
+          </div>
+        </div>
+    
+        <div class="copy">
+          <p>©Copyright 2024 | All Rights Reserved by <a href="#">Kunanathan Jathusan</a> </p>
+        </div>
+      </div>
+      
+
+      
+      <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+  ></script>
+
+  <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+  ></script>
 </body>
 
 </html>
