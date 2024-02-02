@@ -91,6 +91,7 @@ ul{
     gap: 2rem;
     list-style: none;
     transition:left 0.3s;
+    margin-left: -100px;
     /* align-items: center; */
 
 
@@ -102,6 +103,7 @@ ul li a{
     font-weight: 600;
     color: #9333ea;
     transition: 0.3s;
+    
 
 }
 ul li a:hover{
