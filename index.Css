@@ -20,7 +20,7 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins';
     background-color: #1f2937;
     
 }
@@ -128,6 +128,7 @@ ul li a:hover{
 }
 .icon{
     font-size: 3rem;
+    padding-top:  30px;
     /* cursor: pointer; */
 }
 .icon i{
@@ -229,17 +230,22 @@ span{
     nav .navbar .checkbox{
         display: block;
         margin-top: -30px;
-        margin-left: 40px;
+        margin-left: 150px;
+        position: fixed;
     }
     
     nav{
-        width: 375px;
+        width: 405px;
         height: 50px;
-        position: static;
+        position: fixed;
+    }
+    .navbar{
+        position: fixed;
     }
     ul{
+        margin-top: -20px;
         position: absolute;
-        width: 370px;
+        width: 480px;
         height: calc(50vh - 85px);
         left: -200%;
         top: 85px;
@@ -259,7 +265,8 @@ span{
     ul li a{
         font-size: 1.2rem;
         text-align: center;
-        margin-left: -30px;
+        /* margin-left: -30px; */
+        margin-left: 52px;
   }
   .container{
     padding: 10rem 1rem 5rem 1rem 1rem;
@@ -275,12 +282,13 @@ span{
   }
   .button{
     /* margin-top: 30px; */
-    margin-left: 100px;
+    margin-left: 80px;
   }
   .image img{
     width:15rem;
-    margin-top: -50px;
+    margin-top: -5px;
     transition: 0.7s;
+    margin-left: 20px;
 
   }
   .image img:hover{
@@ -291,6 +299,9 @@ span{
   }
   #home{
     height: 120vh;
+  }
+  .section{
+    margin-left: -1px;
   }
 }
 
@@ -354,7 +365,7 @@ span{
     margin-left: 100px;
     font-size: 25px;
     font-weight: 600;
-    color: #faf5ff;
+    color: #ffffff;
     padding: 14px 0px 15px;
     letter-spacing: 1px;
 }
@@ -490,6 +501,7 @@ span{
         /* width: 100%; */
     height: 130vh;
     margin-top: 200px;
+    margin-left: -5px;
 }
     .infosection h1{
         display: grid;
@@ -507,6 +519,7 @@ span{
         text-align: left;
         width: 300px;
         margin-left: -341px;
+        font-size: 18px;
 
     }
     .infosection h2 {
@@ -531,7 +544,7 @@ span{
     }
     .skillsection{
         margin-top: -40px;
-        width: 400px;
+        width: 350px;
         margin-left: -10px;
     }
     .personalinfo{
@@ -542,7 +555,10 @@ span{
         justify-content: center;
     }
     .btn1 button{
-        margin-left: -310px;
+        margin-left: -320px;
+        font-size: 18px;
+        /* border-radius: 50%; */
+        
         
     }
     .about-container .about-content{
@@ -608,7 +624,7 @@ span{
 .para{
     font-size: 30px;
     letter-spacing: 1px;
-    color: wheat;
+    color: rgb(255, 255, 255);
     align-items: center;
     text-align: center;
     margin-bottom: 80px;
@@ -626,7 +642,7 @@ span{
     background-color: #2479ad;
     color: #ffffff;
     width: 150px; 
-    margin-left: 110px;
+    margin-left: 165px;
     margin-top: 20px;
 }
 #btncard:hover{
@@ -654,7 +670,7 @@ span{
 
     }
     .box1 #card{
-        width: 360px;
+        width: 350px;
         height: 300px;
         /* margin-left: 5px; */
         /* padding: 10px; */
@@ -705,7 +721,7 @@ span{
     font-size: 30px;
     text-align: left;
     margin-top: 20px;
-    color: wheat;
+    color: rgb(255, 255, 255);
 
 }
 .textbox .box{
@@ -805,11 +821,14 @@ span{
     .para1{
         font-size: 18px;
         text-align: center;
+        color: white;
     }
     .contactme{
         margin-left: -1px;
         margin-top: 500px;
         height: 100vh;
+        margin-left: 13px;
+
     }
     .grid{
         display: grid;
@@ -820,13 +839,13 @@ span{
         width: 350px;
         border-radius: 50%;
         /* border: 10px solid wheat; */
-        margin-left: -5px;
+        margin-left: -26px;
         margin-bottom: 40px;
     }
     .contact{
         /* width: 530px; */
         margin-top: -50px;
-        margin-left: -5px;
+        margin-left: -25px;
         height: 500px;
         width: 350px;
         box-shadow: var(--text-light);
@@ -876,7 +895,7 @@ span{
 }
 /* footer started */
 .footer{
-    background-color: rgb(6, 87, 103);
+    background-color: rgb(29, 30, 30);
     width: 100%;
     height: 300px;
     flex-wrap: wrap;
@@ -902,6 +921,7 @@ span{
 .aus p{
     margin-top: 10px;
     font-weight: bold;
+    color: whitesmoke;
     font-size: 23.4px;
 }
 .icon5{
@@ -922,11 +942,12 @@ span{
 }
 .icon5 i:hover{
     /* background-color: #a6deeb; */
-    color: rgb(1, 1, 22);
+    color: rgb(28, 119, 231);
     border-radius: 40px;
 }
 .tit{
-    color: antiquewhite;
+    color: rgb(28, 119, 231);
+    margin-left: 10px;
 }
 .tit ul{
     list-style: none;
@@ -934,7 +955,7 @@ span{
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     grid-gap: 8px;
     margin-top: 15px;
-    margin-left: 18px;
+    margin-left: -10px;
     font-size: 25px;
 
 
@@ -952,14 +973,15 @@ span{
     transition: 0.7s;
 
     transform: rotate(360deg);
-    color: black;
-    text-transform: uppercase;
+    color: rgb(28, 119, 231);
+    text-transform: uppercase ;
+    margin-left: 5px;
 }
 .copy {
     background-color: rgb(215, 218, 219);
     width: 100%;
-    height: 51px;
-    margin-top: 5px;
+    height: 65px;
+    margin-top: 180px;
 }
 .copy p{
     text-align: center;
@@ -973,11 +995,12 @@ span{
         display: flex;
         flex-direction: row;
         text-align: left;
-        height: 600px;
+        height: 500px;
+        /* height: 100vh; */
     }
     .aus{
-        margin-top: 300px;
-        margin-left: -50px;
+        margin-top: 322px;
+        margin-left: -80px;
     }
     .quiclink .tit{
         margin-left: -100px;
@@ -985,5 +1008,18 @@ span{
     }
     .tit ul li a{
         background-color: #6b7280;
+    }
+    .copy p{
+        margin-left: -15px;
+        font-size: 17px;
+    }
+    .copy p a{
+        float: left;
+        margin-left: 110px;
+    }
+    .gridfooter{
+        margin-bottom: -100px;
+        text-align: left;
+        padding-left: 0px;
     }
 }
