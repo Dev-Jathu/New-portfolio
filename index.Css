@@ -808,6 +808,7 @@ span{
     }
     .contactme{
         margin-left: -1px;
+        margin-top: 500px;
         height: 100vh;
     }
     .grid{
@@ -815,34 +816,40 @@ span{
         grid-template-rows: repeat(2, 1fr);
     }
     .picture img{
-        height: 400px;
-        width: 400px;
+        height: 350px;
+        width: 350px;
         border-radius: 50%;
         /* border: 10px solid wheat; */
-        margin-left: -11px;
+        margin-left: -5px;
         margin-bottom: 40px;
     }
     .contact{
-        width: 530px;
-        margin-left: -10px;
+        /* width: 530px; */
+        margin-top: -50px;
+        margin-left: -5px;
         height: 500px;
-        width: 400px;
+        width: 350px;
         box-shadow: var(--text-light);
     }
     .contact button{
         margin-left: 160px;
         margin-top: 40px;
         margin-left: 119px;
+        font-size: 12px;
         
     }
+    .tx{
+        width: 300px;
+
+    }
     .txt{
-        width: 350px;
+        width: 300px;
         height: 40px;
        margin-top: 30px;
     }
     .mail{
         margin-top: 30px;
-        width: 350px;
+        width: 300px;
         height: 40px;
         margin-left: 30px;
         font-size: 18px;
@@ -852,7 +859,7 @@ span{
     }
     .textaria{
         margin-top: 30px;
-        width: 350px;
+        width: 300px;
         height: 70px;
         margin-left: 30px;
         font-size: 18px;
@@ -961,7 +968,8 @@ span{
 }
 @media(max-width : 462px){
     .footer{
-        margin-top: 400px;
+        margin-top: 800px;
+        width: 375px;
         display: flex;
         flex-direction: row;
         text-align: left;
@@ -973,6 +981,7 @@ span{
     }
     .quiclink .tit{
         margin-left: -100px;
+        display: none;
     }
     .tit ul li a{
         background-color: #6b7280;
