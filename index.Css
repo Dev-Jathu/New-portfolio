@@ -217,9 +217,6 @@ span{
         /* background-color: rebeccapurple; */
         margin-left: 300px;
     }
-    .links{
-       margin-left: -100px;
-    }
     
 }
 .image img{
@@ -229,13 +226,18 @@ span{
 @media(max-width:462px){
     nav .navbar .checkbox{
         display: block;
+        margin-top: -30px;
+        margin-left: 40px;
     }
+    
     nav{
-        width: 422px;
+        width: 375px;
+        height: 50px;
+        position: static;
     }
     ul{
         position: absolute;
-        width: 100%;
+        width: 370px;
         height: calc(50vh - 85px);
         left: -200%;
         top: 85px;
@@ -245,6 +247,7 @@ span{
         gap: 2rem;
         color: var(--text-dark);
         font-weight: bold;
+        text-align: center;
     }
     nav #check:checked ~ul{
         left: 0%;
@@ -253,6 +256,8 @@ span{
     }
     ul li a{
         font-size: 1.2rem;
+        text-align: center;
+        margin-left: -30px;
   }
   .container{
     padding: 10rem 1rem 5rem 1rem 1rem;
@@ -260,16 +265,19 @@ span{
     grid-template-columns: repeat(1, 1fr);
 
   }
-
+  .description{
+    font-size: 18px;
+}
   .image{
     grid-area: 1;
   }
   .button{
     /* margin-top: 30px; */
-    margin-left: 139px;
+    margin-left: 100px;
   }
   .image img{
-    width:20rem;
+    width:15rem;
+    margin-top: -50px;
     transition: 0.7s;
 
   }
@@ -279,12 +287,15 @@ span{
   .section{
     height: 120vh;
   }
+  #home{
+    height: 120vh;
+  }
 }
 
 /* about me */
 .about-container{
         width: 100%;
-    height: 140vh;
+    height: 100vh;
     padding: 5%;
 }
 .imagesection{
@@ -473,12 +484,17 @@ span{
         /* font-size: 30px;
         text-align: justify; */
     }
+    .about-container{
+        /* width: 100%; */
+    height: 130vh;
+    margin-top: 200px;
+}
     .infosection h1{
         display: grid;
         grid-template-rows: 1fr ;
         justify-content: center;
         text-align: center;
-        margin-left: -600px;
+        margin-left: -630px;
         margin-top: -320px;
         text-decoration: underline;
 }
@@ -488,19 +504,19 @@ span{
         /* display: inline-block; */
         text-align: left;
         width: 300px;
-        margin-left: -321px;
+        margin-left: -341px;
 
     }
     .infosection h2 {
         margin-top: 450px;
-        margin-left: -322px;
+        margin-left: -342px;
         text-decoration: underline;
         
     }
     .imagesection img{
         border-radius: 50%;
-        width: 400px;
-        height: 400px;
+        width: 350px;
+        height: 350px;
         margin-left: -9px;
         margin-top: -230px;
         transition: .7s;
@@ -525,6 +541,7 @@ span{
     }
     .btn1 button{
         margin-left: -310px;
+        
     }
     .about-container .about-content{
         /* background-color: #000; */
@@ -532,6 +549,7 @@ span{
     }
     .about-container{
         height: 120vh;
+
     }
 }
    
@@ -615,35 +633,47 @@ span{
     transition: 1.7s;
     text-transform: uppercase;
 }
+.box1 #card{
+    width: 33rem;
+    /* height: 300px; */
+    /* margin-left: 5px; */
+    /* padding: 10px; */
+    margin-top: 15px;
+   
+
+}
 @media(max-width: 462px){
     .main1{
         text-align: justify;
         margin-left: -1px;
         height:120vh !important;
         /* background-color: #0011ff; */
-        margin-top: 1000px;
+        margin-top: 1300px;
 
     }
-    .box1 .card{
-        width: 150px;
+    .box1 #card{
+        width: 360px;
         height: 300px;
-        margin-left: 5px;
-        padding: 10px;
+        /* margin-left: 5px; */
+        /* padding: 10px; */
         margin-top: 15px;
        
 
     }
+    
     .projectphotos  img{
-        width: 20rem;
+        width: 15rem;
     }
     
     .para{
-        font-size: 20px;
+        font-size: 30px;
+        color: white;
         margin-top: 20px;
     }
     .heading{
-        font-size: 25px;
+        font-size: 39px;
         text-align: center;
+        text-shadow: #000;
 
         
     }
