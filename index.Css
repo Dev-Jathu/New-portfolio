@@ -109,6 +109,15 @@ ul li a{
 ul li a:hover{
     border-bottom-color: #000000;
 }
+ul li a.active::before{
+    content:'';
+    /* position: absolute; */
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 2rem;
+    background: blue;
+}
 .btn{
     font-size: 1.5rem;
     font-weight: 100;
@@ -215,7 +224,7 @@ span{
     display: grid;
     place-items: center;
 }
-@media(min-width:602px){
+@media(min-width:462px){
     .image{
         /* background-color: rebeccapurple; */
         margin-left: 300px;
@@ -275,14 +284,16 @@ span{
 
   }
   .description{
-    font-size: 18px;
+    font-size: 22px;
+    text-align: justify;
+    letter-spacing: -1px;
 }
   .image{
     grid-area: 1;
   }
   .button{
     /* margin-top: 30px; */
-    margin-left: 80px;
+    margin-left: 90px;
   }
   .image img{
     width:15rem;
@@ -335,8 +346,8 @@ span{
     height: 380px;
 }
 .imagesection img{
-    width: 500px;
-    height: 520px;
+    width: 600px;
+    height: 750px;
     object-fit: cover;
     position: relative;
     z-index: 2;
@@ -411,7 +422,7 @@ span{
     letter-spacing: 1px;
     cursor: pointer;
     transition: all 0.4s;
-    margin-top: 20px;
+    margin-top: 330px;
 }
 .btn1 button:hover{
     background-color: teal;
@@ -419,10 +430,10 @@ span{
 }
 .skillsection{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 10px 80px;
-    margin-top: 40px;
-    margin-left: 50px;
+    grid-template-columns: 1fr;
+    grid-gap: 70px;
+    margin-top: -50px;
+    margin-left: 700px;
 }
 .skillsection .subject{
     font-size: 18px;
@@ -432,6 +443,7 @@ span{
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-left: 100px;
+    margin-top: -400px;
 }
 .prograsbar{
     width: 100%;
@@ -508,18 +520,20 @@ span{
         grid-template-rows: 1fr ;
         justify-content: center;
         text-align: center;
-        margin-left: -630px;
-        margin-top: -320px;
-        text-decoration: underline;
+        margin-left: -600px;
+        margin-top: -350px;
+        /* text-decoration: underline; */
 }
     .infosection p{
         /* margin-top: 550px; */
         /* margin-left: -400px; */
         /* display: inline-block; */
-        text-align: left;
+        text-align: justify;
+        letter-spacing: -1px;
+        line-height: 32px;
         width: 300px;
         margin-left: -341px;
-        font-size: 18px;
+        font-size: 22px;
 
     }
     .infosection h2 {
@@ -532,7 +546,7 @@ span{
         border-radius: 50%;
         width: 350px;
         height: 350px;
-        margin-left: -9px;
+        margin-left: -3px;
         margin-top: -230px;
         transition: .7s;
 
@@ -543,9 +557,11 @@ span{
 
     }
     .skillsection{
-        margin-top: -40px;
-        width: 350px;
+        margin-top: -80px;
+        width: 340px;
         margin-left: -10px;
+        grid-gap: 60px;
+        margin-left: 8PX;
     }
     .personalinfo{
         font-size: 15px;
@@ -664,7 +680,7 @@ span{
     .main1{
         text-align: justify;
         margin-left: -1px;
-        height:120vh !important;
+        height:100vh !important;
         /* background-color: #0011ff; */
         margin-top: 1300px;
 
@@ -672,7 +688,7 @@ span{
     .box1 #card{
         width: 350px;
         height: 300px;
-        /* margin-left: 5px; */
+        margin-left: 5px;
         /* padding: 10px; */
         margin-top: 15px;
        
@@ -819,13 +835,13 @@ span{
         margin-top: 70px;
     }
     .para1{
-        font-size: 18px;
-        text-align: center;
+        font-size:22px;
+        text-align: left;
         color: white;
     }
     .contactme{
         margin-left: -1px;
-        margin-top: 500px;
+        margin-top: 550px;
         height: 100vh;
         margin-left: 13px;
 
@@ -899,7 +915,7 @@ span{
     width: 100%;
     height: 300px;
     flex-wrap: wrap;
-    margin-top: 300px;
+    margin-top: 650px;
     
 }
 .gridfooter{
@@ -981,7 +997,7 @@ span{
     background-color: rgb(215, 218, 219);
     width: 100%;
     height: 65px;
-    margin-top: 180px;
+    /* margin-top: 180px; */
 }
 .copy p{
     text-align: center;
@@ -1021,5 +1037,8 @@ span{
         margin-bottom: -100px;
         text-align: left;
         padding-left: 0px;
+    }
+    .copy{
+        margin-top: 180px;
     }
 }
