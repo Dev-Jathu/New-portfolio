@@ -22,6 +22,7 @@ html{
 body{
     font-family: 'Poppins';
     background-color: #1f2937;
+    width: 100%;
     
 }
 a{
@@ -317,6 +318,9 @@ span{
 }
 
 /* about me */
+#aboutme{
+    margin-left: 76px;
+}
 .about-container{
         width: 100%;
     height: 100vh;
@@ -739,7 +743,7 @@ span{
 }
 /* contact me started */
 .contactme{
-    margin-left: 150px;
+    margin-left: 100px;
     margin-top: 200px;
     height: 100vh;
     padding: 5%;
