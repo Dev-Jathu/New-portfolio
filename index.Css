@@ -224,7 +224,7 @@ span{
     display: grid;
     place-items: center;
 }
-@media(min-width:462px){
+@media(min-width:576px){
     .image{
         /* background-color: rebeccapurple; */
         margin-left: 300px;
@@ -235,16 +235,16 @@ span{
     width: min(30rem, 100%);
 } 
 
-@media(max-width:462px){
+@media(max-width:576px){
     nav .navbar .checkbox{
         display: block;
         margin-top: -30px;
-        margin-left: 150px;
+        margin-left: 200px;
         position: fixed;
     }
     
     nav{
-        width: 405px;
+        width: 422px;
         height: 50px;
         position: fixed;
     }
@@ -293,7 +293,7 @@ span{
   }
   .button{
     /* margin-top: 30px; */
-    margin-left: 90px;
+    margin-left: 120px;
   }
   .image img{
     width:15rem;
@@ -306,10 +306,10 @@ span{
     transform: scale(.9);
   }    
   .section{
-    height: 120vh;
+    height: 100vh;
   }
   #home{
-    height: 120vh;
+    height: 100vh;
   }
   .section{
     margin-left: -1px;
@@ -487,7 +487,7 @@ span{
         grid-gap: 20px;
     }
 }
-@media(max-width: 462px){
+@media(max-width: 576px){
     .about-content{
         display:grid;
         grid-template-areas: 'imagesect imagesect' 
@@ -496,13 +496,13 @@ span{
     
     }
 }
-@media(max-width : 462px){
+@media(max-width : 576px){
     .personalinfo{
         grid-template-columns: 1fr;
         margin-left: -1px;
     }
 }
-@media(max-width:462px){
+@media(max-width:576px){
     .infosection p{
         /* text-align:left ; */
         margin-left: -300px;
@@ -511,16 +511,18 @@ span{
     }
     .about-container{
         /* width: 100%; */
-    height: 130vh;
+    height: 100vh;
     margin-top: 200px;
-    margin-left: -5px;
+    margin-left: 15px;
+    width: 422px;
+
 }
     .infosection h1{
         display: grid;
         grid-template-rows: 1fr ;
         justify-content: center;
         text-align: center;
-        margin-left: -600px;
+        margin-left: -650px;
         margin-top: -350px;
         /* text-decoration: underline; */
 }
@@ -583,6 +585,8 @@ span{
     }
     .about-container{
         height: 120vh;
+        width: 422px;
+
 
     }
 }
@@ -609,8 +613,14 @@ span{
 
 
 }
+.box1:hover{
+    background-color: #1f2937;
+    transform: scale(1.1);
+    transition: 1.8s;
+}
 .box1 img:hover{
-    transform: rotate(3deg);
+    transition: 1.7s;
+    transform: scale(0.8);
 }
 .projectphotos h3{
     height: 200px;
@@ -676,28 +686,33 @@ span{
    
 
 }
-@media(max-width: 462px){
+@media(max-width: 576px){
     .main1{
         text-align: justify;
         margin-left: -1px;
-        height:100vh !important;
+        height:100vh ;
+        width: 422px;
         /* background-color: #0011ff; */
-        margin-top: 1300px;
+        margin-top: 700px;
 
     }
     .box1 #card{
         width: 350px;
-        height: 300px;
-        margin-left: 5px;
+        height: 350px;
+        margin-left: 32px;
         /* padding: 10px; */
         margin-top: 15px;
        
 
     }
-    
-    .projectphotos  img{
-        width: 15rem;
+    #btncard{
+        margin-left: 80px;
+        
     }
+    
+    /* .projectphotos  img{
+        width: rem;
+    } */
     
     .para{
         font-size: 30px;
@@ -752,7 +767,7 @@ span{
 }
 .grid{
     display: grid;
-    margin-top: 20px;
+    margin-top: 200px;
 }
 .contact{
     border: 2px solid;
@@ -777,7 +792,7 @@ span{
     font-size: 18px;
     margin-left: 30px;
     text-align: center;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 .txt{
      width: 350px;
@@ -785,7 +800,7 @@ span{
     font-size: 18px;
     margin-left: 30px;
     text-align: center;
-    border-radius: 20px;
+    border-radius: 10px;
 
 }
 .mail{
@@ -795,7 +810,7 @@ span{
     margin-left: 30px;
     font-size: 18px;
     text-align: center;
-    border-radius: 20px;
+    border-radius: 10px;
 
 
 
@@ -807,7 +822,7 @@ span{
     margin-left: 30px;
     font-size: 18px;
     text-align: center;
-    border-radius: 20px;
+    border-radius: 10px;
 
 }
 .contact button{
@@ -817,7 +832,7 @@ span{
     padding: 0.2rem 0.3rem;
     outline: none;
     border: 2px solid rgb(3, 71, 148);
-    border-radius: 20px;
+    border-radius: 10px;
     transition: 0.3s;
     cursor: pointer;
     background-color: #2b2a2f;
@@ -828,7 +843,7 @@ span{
 .contact button:hover{
     background-color: #0011ff;
 }
-@media(max-width : 462px){
+@media(max-width :576px){
     .headingc{
         font-size: 28px;
         text-align: center;
@@ -843,6 +858,7 @@ span{
         margin-left: -1px;
         margin-top: 550px;
         height: 100vh;
+        width: 422px;
         margin-left: 13px;
 
     }
@@ -855,13 +871,13 @@ span{
         width: 350px;
         border-radius: 50%;
         /* border: 10px solid wheat; */
-        margin-left: -26px;
+        margin-left: 4px;
         margin-bottom: 40px;
     }
     .contact{
         /* width: 530px; */
         margin-top: -50px;
-        margin-left: -25px;
+        margin-left: 4px;
         height: 500px;
         width: 350px;
         box-shadow: var(--text-light);
@@ -1004,10 +1020,10 @@ span{
     padding-top: 5px;
     font-size: 25px;
 }
-@media(max-width : 462px){
+@media(max-width :576px){
     .footer{
         margin-top: 800px;
-        width: 375px;
+        width: 422px;
         display: flex;
         flex-direction: row;
         text-align: left;
